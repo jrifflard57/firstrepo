@@ -1,1 +1,5 @@
 #include <somecookies>
+
+int main(){
+
+}
