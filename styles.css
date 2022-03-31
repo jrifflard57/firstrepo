@@ -1,10 +1,19 @@
-#topheading {
-	background: lightblue;
-	color: darkorange;
+body{
+	font-family: sans-serif;
+	font-size: 1em;
+	letter-spacing: normal;
+	text-align: left;
 }
 
+h1{
+	font-size: 3em;
+}
 
-.invertedtext {
-	background: black;
-	color: white;
+h2{
+	font-size: 2em;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: bold;
+	line-height: 1.5;
 }
