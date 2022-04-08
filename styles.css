@@ -1,19 +1,42 @@
-body{
-	font-family: sans-serif;
-	font-size: 1em;
-	letter-spacing: normal;
-	text-align: left;
+*{
+	box-sizing: border-box;
 }
 
-h1{
-	font-size: 3em;
+a:link{
+	text-decoration: none;
+}
+a:visited { 
+	text-decoration: none; 
+	color: white;
+	}
+a:hover { color: black; }
+a:active { 
+	text-decoration: none; 
+	color: white;
 }
 
-h2{
-	font-size: 2em;
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 150px;
+	background-color: blue;
 }
 
-h1,h2,h3,h4,h5,h6{
-	font-weight: bold;
-	line-height: 1.5;
+nav > a{
+	margin-left: 40px;
+}
+
+nav > ul{
+	display: flex;
+	margin: auto;
+	justify-content: space-around;
+	width: 50%;
+}
+
+ul > li{
+	padding: 20px 40px;
+	background-color: orange;
+	border-radius: 50%;
 }
