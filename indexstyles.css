@@ -2,19 +2,23 @@
 	box-sizing: border-box;
 }
 
-a:link{
+
+/*============================================
+HEADER
+*/
+
+nav > ul > li > a:link{
 	text-decoration: none;
 }
-a:visited { 
+nav > ul > li > a:visited { 
 	text-decoration: none; 
 	color: white;
 	}
-a:hover { color: black; }
-a:active { 
+nav > ul > li > a:hover { color: black; }
+nav > ul > li > a:active { 
 	text-decoration: none; 
 	color: white;
 }
-
 
 nav{
 	display: flex;
@@ -35,8 +39,96 @@ nav > ul{
 	width: 50%;
 }
 
-ul > li{
+nav > ul > li{
 	padding: 20px 40px;
 	background-color: orange;
 	border-radius: 50%;
 }
+/*=============================================*/
+
+
+
+
+/*==============================================
+BODY
+*/
+
+
+body > section{
+	background-color: lightblue;
+}
+
+section > div{
+	margin-left: 100px;
+	margin-right: 100px;
+	background-color: white;
+}
+
+h1{
+	font-size: xx-large;
+	padding-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 20px;
+	font-weight: bold;
+}
+
+p{
+	padding: 25px 20px;
+}
+
+/*=============================================*/
+
+
+
+
+
+
+/*============================================
+FOOTER*/
+footer{
+	background-color: lightblue;
+	
+}
+
+
+footer > div{
+	display: flex;
+	justify-content: space-around;
+	padding: 50px 50px;
+}
+
+
+footer > div > ul > li{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+h2{
+	color: darkblue;
+	font-size: large;
+	padding-bottom: 10px;
+}
+
+
+footer > div > ul > li > a:link{
+	text-decoration: none;
+}
+footer > div > ul > li > a:visited { 
+	text-decoration: none; 
+	color: darkgray;
+	}
+footer > div > ul > li > a:hover { color: white; }
+footer > div > ul > li > a:active { 
+	text-decoration: none; 
+	color: darkgray;
+}
+
+h2:first-letter {
+	text-transform: uppercase
+}
+
+footer > div > ul > li > a:first-letter {
+	text-transform: uppercase
+}
+
+
