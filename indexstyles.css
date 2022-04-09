@@ -24,7 +24,7 @@ nav{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	height: 150px;
+	height: 120px;
 	background-color: blue;
 }
 
@@ -126,10 +126,6 @@ footer > div > ul > li > a:active {
 }
 
 h2:first-letter {
-	text-transform: uppercase;
-}
-
-footer > div > ul > li > a:first-letter {
 	text-transform: uppercase;
 }
 
