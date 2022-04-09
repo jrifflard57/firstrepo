@@ -116,19 +116,22 @@ footer > div > ul > li > a:link{
 footer > div > ul > li > a:visited { 
 	text-decoration: none; 
 	color: darkgray;
-	}
-footer > div > ul > li > a:hover { color: white; }
+}
+footer > div > ul > li > a:hover {
+	color: white; 
+}
 footer > div > ul > li > a:active { 
 	text-decoration: none; 
 	color: darkgray;
 }
 
 h2:first-letter {
-	text-transform: uppercase
+	text-transform: uppercase;
 }
 
 footer > div > ul > li > a:first-letter {
-	text-transform: uppercase
+	text-transform: uppercase;
 }
+
 
 
