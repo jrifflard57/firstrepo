@@ -33,22 +33,22 @@
 
 			<h1>Survey</h1>
 
-			<form method="post" action="surveyconnect.php">
+			<form method="post" action="surveyconnect.php" enctype="multipart/form-data">
 				<fieldset>
 					<label>Name: </label><input type="text" name="name"><br>
 					<label>Favorite Color: </label><input type="text" name="color"><br>
 					<label>Favorite Smell: </label><input type="text" name="smell"><br>
 
 					<label>What are you</label>
-					<input type="radio" name="type" value="fartsmella">fart smella
+					<input type="radio" name="type" value="fart smella">fart smella
 					<input type="radio" name="type" value="smart fella">smart fella
 					<br>
 
 					<label>Where are you from</label>
 					<select name="country">
-						<option>stinkyland</option>
-						<option>poopia</option>
-						<option>the poopenfarten</option>
+						<option value ="stinkyland">stinkyland</option>
+						<option value ="poopia">poopia</option>
+						<option value ="the poopenfarten">the poopenfarten</option>
 					</select>
 					<br>
 					<br>

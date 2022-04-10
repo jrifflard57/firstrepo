@@ -1,5 +1,7 @@
 <?php
 
+	include('survey.html');
+
 	$name = $_POST['name'];
 	$color = $_POST['color'];
 	$smell = $_POST['smell'];
@@ -11,20 +13,35 @@
 
 	//db connection
 
-	$conn = new mysqli('localhost','root','','survey');
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
+	$dbname = "survey";
 
-	if($conn->connect_error){
-		echo "$conn->connect_error";
-		die("Connection Failed : ". $conn->connect_error);
-	} else {
-		$stmt = $conn->prepare("insert into surveydata(name, color, smell, type, country, lifestory) values(?, ?, ?, ?, ?, ?)");
-		$stmt->bind_param("ssssss", $name, $color, $smell, $type, $country, $lifestory);
-		$execval = $stmt->execute();
-		echo $execval;
-		echo "Registration successful";
-		$stmt->close();
-		$conn->close();
+	// Create connection
+	$conn = new mysqli($servername, $username, $password, $dbname);
+	// Check connection
+
+	if ($conn->connect_error) {
+		die("Connection failed: " . $conn->connect_error);
 	}
+
+
+	
+	$sql = "INSERT INTO surveydata(name, color, smell, type, country, lifestory) VALUES ('$name', '$color', '$smell', '$type', '$country', '$lifestory')";
+
+	if ($conn->query($sql) === TRUE) {
+		echo "New record created successfully";
+	} 
+
+	else {
+	echo "Something went wrong";
+	}
+
+	$conn->close();
+
+	header('index.html');
+
 
 
 
