@@ -33,14 +33,15 @@
 
 			<h1>Survey</h1>
 
-			<form method="POST">
+			<form method="post" action="surveyconnect.php">
 				<fieldset>
+					<label>Name: </label><input type="text" name="name"><br>
 					<label>Favorite Color: </label><input type="text" name="color"><br>
 					<label>Favorite Smell: </label><input type="text" name="smell"><br>
 
 					<label>What are you</label>
-					<input type="radio" name="poop" value="fartsmella">fart smella
-					<input type="radio" name="poop" value="smart fella">smart fella
+					<input type="radio" name="type" value="fartsmella">fart smella
+					<input type="radio" name="type" value="smart fella">smart fella
 					<br>
 
 					<label>Where are you from</label>
@@ -54,7 +55,7 @@
 
 					<label>Your life story: </label>
 					<br>
-					<textarea name="textarea" cols="80" rows="10"></textarea>
+					<textarea name="lifestory" cols="80" rows="10"></textarea>
 					<br>
 					<br>
 
