@@ -19,13 +19,13 @@ include("dbdisplay.php");
       <li><a href="index.html">HOME</a></li>
       <li><a href="survey.html">SURVEY</a></li>
       <li><a href="#">TABLES</a></li>
-      <li><a href="images.html">IMAGES</a></li>
+      <li><a href="images.html">SUPRISE</a></li>
     </ul>
       
 
   </nav>
 
-<div class="container">
+<div class="container" style="margin-bottom: 450px; margin-top: 50px;">
  <div class="row">
    <div class="col-sm-8">
     <?php echo $deleteMsg??''; ?>
@@ -72,5 +72,42 @@ include("dbdisplay.php");
 </div>
 </div>
 </div>
+
+
+<footer>
+
+    <div>
+      <ul>
+        <li><h2>erat nam</h2></li>
+        <li><a href="#">et egestas quis</a></li>
+        <li><a href="#">ipsum suspendisse ultrices</a></li>
+        <li><a href="#">gravida dictum fusce</a></li>
+      </ul>
+
+      <ul>
+        <li><h2>lectus urna</h2></li>
+        <li><a href="#">ut placerat orci</a></li>
+        <li><a href="#">nulla pellentesque dignissim</a></li>
+        <li><a href="#">enim sit amet</a></li>
+      </ul>
+
+      <ul>
+        <li><h2>duis convallis</h2></li>
+        <li><a href="#">venenatis urna cursus</a></li>
+        <li><a href="#">eget nunc scelerisque</a></li>
+        <li><a href="#">viverra mauris in</a></li>
+      </ul>
+
+      <ul>
+        <li><h2>convallis tellus</h2></li>
+        <li><a href="#">aliquam sem fringilla</a></li>
+        <li><a href="#">ut morbi tincidunt</a></li>
+        <li><a href="#">augue interdum velit</a></li>
+      </ul>
+    </div>
+
+  </footer>
+
+
 </body>
 </html>
