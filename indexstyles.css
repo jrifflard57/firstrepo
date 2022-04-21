@@ -25,7 +25,7 @@ nav{
 	justify-content: space-around;
 	align-items: center;
 	height: 120px;
-	background-color: blue;
+	background-color: rgb(0, 102, 255);
 }
 
 nav > a{
@@ -41,7 +41,7 @@ nav > ul{
 
 nav > ul > li{
 	padding: 20px 40px;
-	background-color: orange;
+	background-color: rgb(255, 166, 0);
 	border-radius: 50%;
 }
 /*=============================================*/
